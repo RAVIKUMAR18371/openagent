@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "node init && vite",
+    "build": "node init && tsc && vite build",
     "test": "vitest run",
     "preview": "vite preview",
     "lint": "eslint ./src --ext .ts,.tsx && tsc --noemit",
